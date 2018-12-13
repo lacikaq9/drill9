@@ -31,16 +31,15 @@ int main()
     add_day(tomorrow, 1);
     cout << today << '\n'
          << tomorrow << '\n';
-    //Date bad_day;
-    //init_day(bad_day, 2004, 13, -5);
+    
 }
 */
 
 /* 9.4.2
 struct Date {
-    int y, m, d;                    // year, month, day
-    Date(int y, int m, int d);      // check for valid date and initialize
-    void add_day(int n);            // increase the Date by n days
+    int y, m, d;                    
+    Date(int y, int m, int d);      
+    void add_day(int n);            
 };
 Date::Date(int yy, int mm, int dd)
     :y{yy}, m{mm}, d{dd}
@@ -80,8 +79,8 @@ catch(...) {
 class Date {
     int y, m, d;
 public:
-    Date(int y, int m, int d);      // check for valid date and initialize
-    void add_day(int n);            // increase the Date by n days
+    Date(int y, int m, int d);      
+    void add_day(int n);            
     int month() const { return m; }
     int day() const { return d; }
     int year() const { return y; }
